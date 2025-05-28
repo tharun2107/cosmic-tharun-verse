@@ -1,6 +1,5 @@
-
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaLinkedin, FaGithub, FaExternalLinkAlt, FaRocket } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub, FaRocket } from 'react-icons/fa';
 
 const ContactSection = () => {
   const contactInfo = [
@@ -24,13 +23,6 @@ const ContactSection = () => {
       url: "https://github.com/tharun2107",
       icon: FaGithub,
       color: "#333"
-    },
-    {
-      name: "Portfolio",
-      value: "tharun21.netlify.app",
-      url: "https://tharun21.netlify.app/",
-      icon: FaExternalLinkAlt,
-      color: "#00D9FF"
     }
   ];
 
@@ -89,7 +81,7 @@ const ContactSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"
         >
           {contactInfo.map((contact, index) => (
             <motion.a

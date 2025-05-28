@@ -12,7 +12,6 @@ import {
   FaLinux 
 } from 'react-icons/fa';
 import { 
-  SiTailwindcss, 
   SiExpress, 
   SiMongodb, 
   SiMysql
@@ -27,7 +26,6 @@ const SkillsSection = () => {
         { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" },
         { name: "JavaScript", icon: FaJs, color: "#F7DF1E" },
         { name: "React", icon: FaReact, color: "#61DAFB" },
-        { name: "Tailwind", icon: SiTailwindcss, color: "#06B6D4" },
       ]
     },
     {
@@ -43,7 +41,6 @@ const SkillsSection = () => {
       skills: [
         { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
         { name: "MySQL", icon: SiMysql, color: "#4479A1" },
-        { name: "PL/SQL", icon: FaDatabase, color: "#F80000" },
       ]
     },
     {

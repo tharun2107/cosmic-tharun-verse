@@ -39,9 +39,8 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
-            CSE student crafting{' '}
-            <span className="text-cyan-400 font-semibold">futuristic</span>,{' '}
-            <span className="text-cyan-400 font-semibold">data-driven</span> digital experiences
+            <span className="text-cyan-400 font-semibold">MERN Stack Developer</span> &{' '}
+            <span className="text-cyan-400 font-semibold">DSA Enthusiast</span>
           </motion.p>
 
           <motion.div

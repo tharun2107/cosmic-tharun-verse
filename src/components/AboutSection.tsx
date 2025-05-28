@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaAward, FaBook, FaTrophy } from 'react-icons/fa';
+import { FaGraduationCap, FaAward, FaBook, FaTrophy, FaUser } from 'react-icons/fa';
 
 const AboutSection = () => {
   const education = [
@@ -75,6 +75,29 @@ const AboutSection = () => {
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             A passionate developer on a journey to create innovative solutions that make a difference
           </p>
+        </motion.div>
+
+        {/* About Me Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <div className="gradient-border card-3d max-w-4xl mx-auto">
+            <div className="gradient-border-content p-8">
+              <div className="flex items-center mb-6">
+                <div className="bg-cyan-500/20 p-3 rounded-lg mr-4">
+                  <FaUser className="text-2xl text-cyan-400" />
+                </div>
+                <h3 className="text-3xl font-bold text-cyan-400">About Me</h3>
+              </div>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                I'm a passionate Computer Science Engineering student specializing in Data Science, with a strong foundation in MERN stack development and data structures & algorithms. I love creating innovative web applications that solve real-world problems and have a keen interest in competitive programming. Through various projects and certifications, I've developed expertise in full-stack development, cloud technologies, and data analytics. I'm always eager to learn new technologies and contribute to meaningful projects that make a positive impact.
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">

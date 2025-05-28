@@ -1,6 +1,6 @@
-
 import { motion } from 'framer-motion';
-import { SiLeetcode, SiCodechef, SiHackerrank } from 'react-icons/si';
+import { SiLeetcode, SiCodechef } from 'react-icons/si';
+import { FaCode } from 'react-icons/fa';
 
 const CodingProfilesSection = () => {
   const profiles = [
@@ -21,12 +21,12 @@ const CodingProfilesSection = () => {
       description: "Competitive programming"
     },
     {
-      name: "HackerRank",
-      username: "tharunkudikyala",
-      url: "https://www.hackerrank.com/tharunkudikyala",
-      icon: SiHackerrank,
-      color: "#2EC866",
-      description: "Coding challenges & skills"
+      name: "SmartInterviews",
+      username: "tharun2107",
+      url: "https://smartinterviews.in/profile/tharun2107",
+      icon: FaCode,
+      color: "#FF6B35",
+      description: "Interview preparation & DSA"
     }
   ];
 

@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaUtensils, FaChartLine } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaUtensils, FaChartLine, FaShoppingCart, FaVideo, FaHeart } from 'react-icons/fa';
 
 const ProjectsSection = () => {
   const projects = [
@@ -15,12 +15,39 @@ const ProjectsSection = () => {
     },
     {
       title: "Expense Tracker",
-      description: "A feature-rich expense tracking application with authentication and advanced chart visualization system for personal finance management.",
+      description: "A feature-rich expense tracking application with advanced chart visualization system for personal finance management.",
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop",
       github: "https://github.com/tharun2107/expensetracker",
       live: "https://exptrackerrr.netlify.app/",
       icon: FaChartLine,
-      tech: ["React", "Charts.js", "Authentication", "Local Storage"]
+      tech: ["React", "Charts.js", "MERN"]
+    },
+    {
+      title: "StyleSphere",
+      description: "A modern, responsive e-commerce platform built using the MERN stack. Offers fashion products with Razorpay payments and JWT authentication.",
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&h=300&fit=crop",
+      github: "https://github.com/tharun2107/StyleSphere",
+      live: "https://styleesphere.netlify.app/",
+      icon: FaShoppingCart,
+      tech: ["MERN", "Razorpay", "JWT", "E-commerce"]
+    },
+    {
+      title: "LeetCode Video Extension",
+      description: "Chrome extension that integrates with LeetCode, adding a custom 'Video' button to fetch YouTube solutions instantly without switching tabs.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      github: "https://github.com/tharun2107/leetcode-video-solution-extension",
+      live: null,
+      icon: FaVideo,
+      tech: ["Chrome Extension", "JavaScript", "API Integration"]
+    },
+    {
+      title: "HealthVault",
+      description: "MERN stack application to track health with pages for diet tracking, sleep tracking, fitness, medication and in-app notifications.",
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
+      github: "https://github.com/tharun2107/healthvault",
+      live: null,
+      icon: FaHeart,
+      tech: ["MERN", "Health Tracking", "Notifications"]
     }
   ];
 
@@ -69,7 +96,7 @@ const ProjectsSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
         >
           {projects.map((project, index) => (
             <motion.div

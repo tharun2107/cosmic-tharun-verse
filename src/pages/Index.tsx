@@ -8,11 +8,13 @@ import ProjectsSection from '@/components/ProjectsSection';
 import CertificationsSection from '@/components/CertificationsSection';
 import CodingProfilesSection from '@/components/CodingProfilesSection';
 import ContactSection from '@/components/ContactSection';
+import MouseFollower from '@/components/MouseFollower';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-black text-white relative">
       <GalaxyBackground />
+      <MouseFollower />
       <Navigation />
       <main className="relative z-10">
         <HeroSection />
@@ -28,7 +30,7 @@ const Index = () => {
       <footer className="relative z-10 border-t border-cyan-500/20 py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">
-            © 2024 Tharun Kudikayala. Crafted with passion and code.
+            © 2025 Tharun Kudikayala. Crafted with passion and code.
           </p>
         </div>
       </footer>
