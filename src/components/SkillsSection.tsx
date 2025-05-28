@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { 
   FaHtml5, 
@@ -16,8 +15,7 @@ import {
   SiTailwindcss, 
   SiExpress, 
   SiMongodb, 
-  SiMysql, 
-  SiPlsql 
+  SiMysql
 } from 'react-icons/si';
 
 const SkillsSection = () => {
@@ -45,7 +43,7 @@ const SkillsSection = () => {
       skills: [
         { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
         { name: "MySQL", icon: SiMysql, color: "#4479A1" },
-        { name: "PL/SQL", icon: SiPlsql, color: "#F80000" },
+        { name: "PL/SQL", icon: FaDatabase, color: "#F80000" },
       ]
     },
     {

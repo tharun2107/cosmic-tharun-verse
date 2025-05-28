@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { 
   FaCloud, 
@@ -9,7 +8,7 @@ import {
   FaHtml5,
   FaUserGraduate 
 } from 'react-icons/fa';
-import { SiMongodb, SiOracle, SiAltair } from 'react-icons/si';
+import { SiMongodb, SiOracle } from 'react-icons/si';
 
 const CertificationsSection = () => {
   const certifications = [
@@ -58,7 +57,7 @@ const CertificationsSection = () => {
     {
       name: "Altair Data Science Internship",
       provider: "Altair",
-      icon: SiAltair,
+      icon: FaDatabase,
       color: "#FF6B35"
     }
   ];
