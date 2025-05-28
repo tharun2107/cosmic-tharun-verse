@@ -94,7 +94,7 @@ const AboutSection = () => {
                 <h3 className="text-3xl font-bold text-cyan-400">About Me</h3>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed">
-                I'm a passionate Computer Science Engineering student specializing in Data Science, with a strong foundation in MERN stack development and data structures & algorithms. I love creating innovative web applications that solve real-world problems and have a keen interest in competitive programming. Through various projects and certifications, I've developed expertise in full-stack development, cloud technologies, and data analytics. I'm always eager to learn new technologies and contribute to meaningful projects that make a positive impact.
+                I'm a passionate Computer Science Engineering student specializing in Data Science, with a strong foundation in MERN stack development and data structures & algorithms. I love creating innovative web applications that solve real-world problems. Through various projects and certifications, I've developed expertise in full-stack development. I'm always eager to learn new technologies and contribute to meaningful projects that make a positive impact.
               </p>
             </div>
           </div>

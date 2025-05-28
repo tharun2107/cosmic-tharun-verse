@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaUtensils, FaChartLine, FaShoppingCart, FaVideo, FaHeart } from 'react-icons/fa';
 
@@ -148,30 +147,26 @@ const ProjectsSection = () => {
 
                   {/* Action Buttons */}
                   <div className="flex space-x-4">
-                    <motion.a
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
+                    <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors duration-300"
+                      className="flex items-center space-x-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors duration-300 hover:scale-105"
                     >
                       <FaGithub />
                       <span>Code</span>
-                    </motion.a>
+                    </a>
                     
                     {project.live && (
-                      <motion.a
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                      <a
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center space-x-2 bg-cyan-500 text-black px-4 py-2 rounded-lg hover:bg-cyan-400 transition-colors duration-300"
+                        className="flex items-center space-x-2 bg-cyan-500 text-black px-4 py-2 rounded-lg hover:bg-cyan-400 transition-colors duration-300 hover:scale-105"
                       >
                         <FaExternalLinkAlt />
                         <span>Live Demo</span>
-                      </motion.a>
+                      </a>
                     )}
                   </div>
                 </div>
