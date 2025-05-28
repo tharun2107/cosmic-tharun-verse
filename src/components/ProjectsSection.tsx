@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaUtensils, FaChartLine, FaShoppingCart, FaVideo, FaHeart } from 'react-icons/fa';
 
@@ -44,7 +45,7 @@ const ProjectsSection = () => {
       description: "MERN stack application to track health with pages for diet tracking, sleep tracking, fitness, medication and in-app notifications.",
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop",
       github: "https://github.com/tharun2107/healthvault",
-      live: null,
+      live: "https://healthvaultt.netlify.app/",
       icon: FaHeart,
       tech: ["MERN", "Health Tracking", "Notifications"]
     }
@@ -101,12 +102,6 @@ const ProjectsSection = () => {
             <motion.div
               key={project.title}
               variants={projectVariants}
-              whileHover={{ 
-                scale: 1.03,
-                rotateY: 5,
-                rotateX: 5,
-                z: 50
-              }}
               className="gradient-border card-3d group"
             >
               <div className="gradient-border-content overflow-hidden">
@@ -151,7 +146,7 @@ const ProjectsSection = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center space-x-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors duration-300 hover:scale-105"
+                      className="flex items-center space-x-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105"
                     >
                       <FaGithub />
                       <span>Code</span>
@@ -162,7 +157,7 @@ const ProjectsSection = () => {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center space-x-2 bg-cyan-500 text-black px-4 py-2 rounded-lg hover:bg-cyan-400 transition-colors duration-300 hover:scale-105"
+                        className="flex items-center space-x-2 bg-cyan-500 text-black px-4 py-2 rounded-lg hover:bg-cyan-400 transition-all duration-300 transform hover:scale-105"
                       >
                         <FaExternalLinkAlt />
                         <span>Live Demo</span>
