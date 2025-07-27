@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/1ff51a62-a756-4f17-af6e-2761ef76c354
+```markdown
+# 🚀 Tharun Kudikayala - Portfolio
 
-## How can I edit this code?
+A modern, animated, and interactive developer portfolio built with **React**, **Vite**, **TypeScript**, **Tailwind CSS**, and **Three.js** (via @react-three/fiber).  
+Features a beautiful animated starfield background, smooth navigation, and responsive design.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1ff51a62-a756-4f17-af6e-2761ef76c354) and start prompting.
+- Animated 3D Starfield** background using Three.js and React Three Fiber
+- Modern UI with Tailwind CSS and shadcn/ui components
+- Responsive and mobile-friendly
+- Sections: Home, About, Skills, Projects, Certifications, Coding Profiles, Contact
+- Custom Mouse Follower effect
+- Downloadable Resume button
+- Smooth scrolling navigation
+- Deployed on** [lovable.app](https://cosmic-tharun-verse.lovable.app) (or your deployment URL)
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Three.js](https://threejs.org/) & [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+- [shadcn/ui](https://ui.shadcn.com/) components
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🚀 Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 1. Clone the repository
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+git clone https://github.com/tharun2107/cosmic-tharun-verse.git
+cd cosmic-tharun-verse
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 2. Install dependencies
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal) to view it in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🏗️ Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+cosmic-tharun-verse/
+  ├── public/                # Static assets
+  ├── src/
+  │   ├── components/        # React components (sections, UI, effects)
+  │   ├── pages/             # Main pages (Index, NotFound)
+  │   ├── hooks/             # Custom hooks
+  │   ├── lib/               # Utilities
+  │   ├── App.tsx            # App root
+  │   ├── main.tsx           # Entry point
+  │   └── index.css          # Tailwind and global styles
+  ├── package.json
+  └── README.md
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🌌 Credits
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- [Three.js](https://threejs.org/)
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/1ff51a62-a756-4f17-af6e-2761ef76c354) and click on Share -> Publish.
+## 📄 License
 
-## Can I connect a custom domain to my Lovable project?
+This project is open source and available under the [MIT License](LICENSE).
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+> Designed & developed by **Tharun Kudikayala**  
+> [LinkedIn](https://www.linkedin.com/in/tharun-kudikyala-37124727b/) • [GitHub](https://github.com/tharun2107)
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
