@@ -3,31 +3,27 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useRef, useMemo } from 'react';
 import * as THREE from 'three';
 
-const Stars = () => {
+const StarField = () => {
   const mesh = useRef<THREE.Points>(null);
-  
-  const [positions, colors] = useMemo(() => {
-    const positions = new Float32Array(5000 * 3);
-    const colors = new Float32Array(5000 * 3);
-    
-    for (let i = 0; i < 5000; i++) {
-      positions[i * 3] = (Math.random() - 0.5) * 2000;
-      positions[i * 3 + 1] = (Math.random() - 0.5) * 2000;
-      positions[i * 3 + 2] = (Math.random() - 0.5) * 2000;
-      
-      const intensity = Math.random();
-      colors[i * 3] = intensity * 0.5; // Red
-      colors[i * 3 + 1] = intensity; // Green  
-      colors[i * 3 + 2] = intensity; // Blue
+
+  // Generate 1000 random points in a sphere
+  const positions = useMemo(() => {
+    const arr = new Float32Array(1000 * 3);
+    for (let i = 0; i < 1000; i++) {
+      const r = Math.random() * 400 + 100;
+      const theta = Math.random() * 2 * Math.PI;
+      const phi = Math.acos(2 * Math.random() - 1);
+      arr[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+      arr[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+      arr[i * 3 + 2] = r * Math.cos(phi);
     }
-    
-    return [positions, colors];
+    return arr;
   }, []);
 
   useFrame((state) => {
     if (mesh.current) {
-      mesh.current.rotation.x = state.clock.getElapsedTime() * 0.05;
-      mesh.current.rotation.y = state.clock.getElapsedTime() * 0.075;
+      mesh.current.rotation.y = state.clock.getElapsedTime() * 0.05;
+      mesh.current.rotation.x = state.clock.getElapsedTime() * 0.02;
     }
   });
 
@@ -40,16 +36,10 @@ const Stars = () => {
           array={positions}
           itemSize={3}
         />
-        <bufferAttribute
-          attach="attributes-color"
-          count={colors.length / 3}
-          array={colors}
-          itemSize={3}
-        />
       </bufferGeometry>
       <pointsMaterial
-        size={10}
-        vertexColors
+        size={2}
+        color="white"
         transparent
         opacity={0.8}
         sizeAttenuation={true}
@@ -58,18 +48,20 @@ const Stars = () => {
   );
 };
 
-const GalaxyBackground = () => {
-  return (
-    <div className="fixed inset-0 -z-10">
-      <Canvas
-        camera={{ position: [0, 0, 500], fov: 60 }}
-        style={{ background: 'radial-gradient(ellipse at center, #0d1421 0%, #000000 100%)' }}
-      >
-        <Stars />
-        <ambientLight intensity={0.1} />
-      </Canvas>
-    </div>
-  );
-};
+const GalaxyBackground = () => (
+  <div
+    style={{
+      position: "fixed",
+      inset: 0,
+      zIndex: -10,
+      pointerEvents: "none"
+    }}
+  >
+    <Canvas camera={{ position: [0, 0, 600], fov: 60 }} style={{ background: '#000' }}>
+      <StarField />
+      <ambientLight intensity={1} />
+    </Canvas>
+  </div>
+);
 
 export default GalaxyBackground;
