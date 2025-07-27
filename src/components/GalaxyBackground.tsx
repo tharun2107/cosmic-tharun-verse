@@ -48,7 +48,7 @@ const Stars = () => {
         />
       </bufferGeometry>
       <pointsMaterial
-        size={2}
+        size={10}
         vertexColors
         transparent
         opacity={0.8}
@@ -62,7 +62,7 @@ const GalaxyBackground = () => {
   return (
     <div className="fixed inset-0 -z-10">
       <Canvas
-        camera={{ position: [0, 0, 1], fov: 60 }}
+        camera={{ position: [0, 0, 500], fov: 60 }}
         style={{ background: 'radial-gradient(ellipse at center, #0d1421 0%, #000000 100%)' }}
       >
         <Stars />
