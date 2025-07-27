@@ -12,7 +12,7 @@ import MouseFollower from '@/components/MouseFollower';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-black text-white relative">
+    <div className="min-h-screen text-white relative">
       <GalaxyBackground />
       <MouseFollower />
       <Navigation />

@@ -66,7 +66,7 @@ const Navigation = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://drive.google.com/file/d/1K-q13_z9S-IQ7D6TkQx3GiIKBxRdSyHh/view"
+              href="https://drive.google.com/file/d/1_iZF6HAOToK42hgvGeM1adSeyx0d32Nd/view"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 bg-cyan-500 text-black px-4 py-2 rounded-lg hover:bg-cyan-400 transition-colors duration-300"

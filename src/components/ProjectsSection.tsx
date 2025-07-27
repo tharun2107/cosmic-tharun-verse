@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       description: "A comprehensive MERN stack application for food donation management, connecting donors with those in need through an intuitive platform.",
       image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&h=300&fit=crop",
       github: "https://github.com/tharun2107/AnnSevaF",
-      live: null,
+      live:"https://annseva-si6t.onrender.com/",
       icon: FaUtensils,
       tech: ["React", "Node.js", "MongoDB", "Express"]
     },
