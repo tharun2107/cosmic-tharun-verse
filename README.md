@@ -17,7 +17,7 @@ Features a beautiful animated starfield background, smooth navigation, and respo
 - Custom Mouse Follower effect
 - Downloadable Resume button
 - Smooth scrolling navigation
-- Deployed on** [lovable.app](https://cosmic-tharun-verse.lovable.app) (or your deployment URL)
+-
 
 ---
 
@@ -53,7 +53,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal) to view it in your browser.
+Open [http://localhost:5173](http://localhost:8081) (or the port shown in your terminal) to view it in your browser.
 
 ---
 
