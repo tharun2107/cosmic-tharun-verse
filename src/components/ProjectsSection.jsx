@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaUtensils, FaChartLine, FaShoppingCart, FaVideo, FaHeart } from 'react-icons/fa';
 
@@ -48,6 +47,15 @@ const ProjectsSection = () => {
       live: "https://healthvaultt.netlify.app/",
       icon: FaHeart,
       tech: ["MERN", "Health Tracking", "Notifications"]
+    },
+    {
+      title: "Next Hire",
+      description: "MERN stack platform with resume builder, ATS score analysis, JD-based learning resources, real-time MCQ tests, and mock interviews using Gemini API.",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=300&fit=crop",
+      github: "https://github.com/tharun2107/jd-to-job",
+      live: null,
+      icon: FaChartLine,
+      tech: ["MERN", "NLP", "Gemini API", "ATS", "PDF Export", "Real-time Interview"]
     }
   ];
 

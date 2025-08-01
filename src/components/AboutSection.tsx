@@ -1,13 +1,12 @@
-
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaAward, FaBook, FaTrophy, FaUser } from 'react-icons/fa';
-
+import gdg_image from "../lib/gdg_image.jpeg"
 const AboutSection = () => {
   const education = [
     {
       institution: "CVR College of Engineering",
       degree: "B.Tech CSE (Data Science)",
-      grade: "9.47 CGPA",
+      grade: "9.45 CGPA",
       icon: FaGraduationCap
     },
     {
@@ -28,7 +27,9 @@ const AboutSection = () => {
     {
       title: "GDG Solution Challenge",
       award: "Consolation Prize",
-      icon: FaTrophy
+      icon: FaTrophy,
+      image: gdg_image, // Add your image path here
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7296592338192121856/" // Add your LinkedIn link here
     },
     {
       title: "Academic Excellence",
@@ -168,6 +169,23 @@ const AboutSection = () => {
                           {achievement.title}
                         </h4>
                         <p className="text-yellow-400 font-semibold">{achievement.award}</p>
+                        {achievement.image && (
+                          <img
+                            src={achievement.image}
+                            alt={achievement.title}
+                            className="mt-2 rounded shadow w-65 h-45" // Increased from w-32 to w-40
+                          />
+                        )}
+                        {achievement.linkedin && (
+                          <a
+                            href={achievement.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block mt-2 text-cyan-400 underline"
+                          >
+                            View on LinkedIn
+                          </a>
+                        )}
                       </div>
                     </div>
                   </div>
